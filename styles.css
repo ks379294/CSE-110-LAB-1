@@ -11,7 +11,9 @@ nav {
     background-color: white;
     width: 100%;
 }
-
+img {
+    max-width: 100%;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -69,3 +71,24 @@ li a:hover {
     max-height: 500px;
     overflow: scroll;
 }
+@media screen and (max-width: 800px) {
+    a {
+        display:none;
+    }
+    nav img {
+        max-width: 75%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .grid-row {
+        margin: 0;
+        display: inline-grid;
+        width: 100%;
+        gap: 20px;
+        grid-template-columns: auto auto;
+    }
+  }
